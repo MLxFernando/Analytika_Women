@@ -669,6 +669,8 @@ section.main-banner {
   content: '';
   right: -25%;
   z-index: 1;
+  top: 0px; 
+  left: 280px;
 }
 
 .main-banner .header-text::after {
