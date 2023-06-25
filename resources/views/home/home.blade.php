@@ -95,6 +95,7 @@
         <div class="col-lg-6">
           <div class="right-image">
             <img src="assets/images/banner-right-image.png" alt="">
+            
           </div>
         </div>
       </div>
