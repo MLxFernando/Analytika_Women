@@ -32,7 +32,7 @@
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
                     <a href="/" class="logo">
-                        <img src="assets/images/logo.png" alt="Analytika-Women" style="height: 15%; width: 30%;">
+                        <img src="assets/images/logo.png" alt="Analytika-Women" style="height: 70%; width: 50%;margin-top: 10px;">
                     </a>
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
