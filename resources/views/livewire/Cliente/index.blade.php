@@ -51,6 +51,7 @@
         @endforeach
         </tbody>
     </table>
+    <button onclick="window.location.href='/redirects'" class="bg-purple-500 hover:bg-purple-600 text-white font-bold py-2 px-4">Volver</button>
         </div>
     </div>
 </div>

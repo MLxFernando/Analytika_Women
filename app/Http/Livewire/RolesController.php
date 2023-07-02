@@ -3,18 +3,18 @@
 namespace App\Http\Livewire;
 
 use Livewire\Component;
-
 use App\Models\Rol;
 
 class RolesController extends Component
 {
-    //definimos unas variables
+
     public $roles;
     public $ROL_ID;
     public $ROL_NOMBRE;
 
     public $modal = false;
 
+    
     public function render()
     {
         $this->roles = Rol::all();
