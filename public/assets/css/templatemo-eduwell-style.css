@@ -727,17 +727,21 @@ section.main-banner {
 services
 ---------------------------------------------
 */ 
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 .services .item {
   border-radius: 15px;
   text-align: center;
   padding: 50px 30px;
-  margin: 15px;
   transition: all .3s;
 }
 
 .services .item:hover {
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.06);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.50);
 }
 
 .services .item .icon {

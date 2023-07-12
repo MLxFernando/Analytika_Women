@@ -37,6 +37,18 @@
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                         <ul class="nav">
+
+                            <li><a href="/">Home</a></li>
+                            <li class="has-sub">
+                                <a href="javascript:void(0)">¿Quiénes Somos?</a>
+                                <ul class="sub-menu">
+                                    <li><a href="/about">Acerca De</a></li>
+                                    <li><a href="/service">Servicios</a></li>
+                                    <li><a href="/contact">Contactos</a></li>
+                                </ul>
+                            </li>
+                            <li class="scroll-to-section"><a href="#services">Servicios</a></li>
+
                             <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
                             <li class="has-sub">
                               <a href="javascript:void(0)">Quiénes somos</a>
@@ -49,6 +61,7 @@
                             <li class="scroll-to-section"><a href="#services">Servicios</a></li>
                             <li class="scroll-to-section"><a href="#courses">Cursos</a></li>
                             
+
                             <li class="scroll-to-section"><a href="#testimonials">Testimonios</a></li>
                             <li class="scroll-to-section"><a href="#contact-section">Contactos</a></li>
                             @if (Route::has('login'))
@@ -95,8 +108,14 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <div class="owl-service-item owl-carousel">
-            <div class="item">
+          <div class="section-heading">
+            <h6>Nuestros Servicios</h6>
+            <h4>Servicios <em>Prestados</em></h4>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="service-list">
+            <div class="item col-lg-6">
               <div class="service-item">
                 <div class="icon">
                   <img src="assets/images/service-icon-01.png" alt="">
@@ -109,7 +128,7 @@
                 </p>
               </div>
             </div>
-            <div class="item">
+            <div class="item col-lg-6">
               <div class="service-item">
                 <div class="icon">
                   <img src="assets/images/service-icon-02.png" alt="">
@@ -121,7 +140,7 @@
                 </p>
               </div>
             </div>
-            <div class="item">
+            <div class="item col-lg-6">
               <div class="service-item">
                 <div class="icon">
                   <img src="assets/images/service-icon-03.png" alt="">
@@ -134,7 +153,7 @@
               </p>
               </div>
             </div>
-            <div class="item">
+            <div class="item col-lg-6">
               <div class="service-item">
                 <div class="icon">
                   <img src="assets/images/service-icon-04.png" alt="">
@@ -146,7 +165,7 @@
                 </p>
               </div>
             </div>
-            <div class="item">
+            <div class="item col-lg-6">
               <div class="service-item">
                 <div class="icon">
                   <img src="assets/images/service-icon-01.png" alt="">
@@ -158,7 +177,7 @@
                 </p>
               </div>
             </div>
-            <div class="item">
+            <div class="item col-lg-6">
               <div class="service-item">
                 <div class="icon">
                   <img src="assets/images/service-icon-02.png" alt="">
@@ -169,7 +188,7 @@
                 </p>
               </div>
             </div>
-            <div class="item">
+            <div class="item col-lg-6">
               <div class="service-item">
                 <div class="icon">
                   <img src="assets/images/service-icon-03.png" alt="">
@@ -182,7 +201,7 @@
                 </p>
               </div>
             </div>
-            <div class="item">
+            <div class="item col-lg-6">
               <div class="service-item">
                 <div class="icon">
                   <img src="assets/images/service-icon-04.png" alt="">
@@ -196,7 +215,7 @@
                 </p>
               </div>
             </div>
-            <div class="item">
+            <div class="item col-lg-6">
               <div class="service-item">
                 <div class="icon">
                   <img src="assets/images/service-icon-01.png" alt="">
@@ -207,7 +226,7 @@
                     Clasificadores de presupuestos.</p>
               </div>
             </div>
-            <div class="item">
+            <div class="item col-lg-6">
               <div class="service-item">
                 <div class="icon">
                   <img src="assets/images/service-icon-02.png" alt="">
@@ -222,7 +241,7 @@
                 </p>
               </div>
             </div>
-            <div class="item">
+            <div class="item col-lg-6">
               <div class="service-item">
                 <div class="icon">
                   <img src="assets/images/service-icon-03.png" alt="">
@@ -237,7 +256,7 @@
                   </p>
               </div>
             </div>
-            <div class="item">
+            <div class="item col-lg-6">
               <div class="service-item">
                 <div class="icon">
                   <img src="assets/images/service-icon-04.png" alt="">
@@ -252,31 +271,6 @@
                 </p>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="simple-cta">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-5 offset-lg-1">
-          <div class="left-image">
-            <img src="assets/images/cta-left-image.png" alt="">
-          </div>
-        </div>
-        <div class="col-lg-5 align-self-center">
-          <h6>APROVECHA!</h6>
-          <h4>Te damos 50% de descuento si compras +1 curso </h4>
-          <p>"Los grandes logros de
-            cualquier persona,
-            generalmente dependen de
-            muchas manos, corazones y
-            mentes."
-          </p>
-          <div class="white-button">
-            <a href="/contact">Ver Cursos</a>
           </div>
         </div>
       </div>
@@ -304,7 +298,7 @@
               <li>- Ventaja 4</li>
             </ul>
             <div class="main-button-gradient">
-              <a href="our-services.html">Nuestros Servicios</a>
+              <a href="/service">Nuestros Servicios</a>
             </div>
           </div>
         </div>
