@@ -39,17 +39,16 @@
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                         <ul class="nav">
-                            <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-                            <li class="scroll-to-section"><a href="#services">Servicios</a></li>
-                            <li class="scroll-to-section"><a href="#courses">Cursos</a></li>
+                            <li><a href="/">Home</a></li>
                             <li class="has-sub">
-                                <a href="javascript:void(0)">Pages</a>
+                                <a href="javascript:void(0)">¿Quiénes Somos?</a>
                                 <ul class="sub-menu">
                                     <li><a href="/about">Acerca De</a></li>
                                     <li><a href="/service">Servicios</a></li>
                                     <li><a href="/contact">Contactos</a></li>
                                 </ul>
                             </li>
+                            <li class="scroll-to-section"><a href="#services">Servicios</a></li>
                             <li class="scroll-to-section"><a href="#testimonials">Testimonios</a></li>
                             <li class="scroll-to-section"><a href="#contact-section">Contactos</a></li>
                             @if (Route::has('login'))
@@ -269,31 +268,6 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="simple-cta">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-5 offset-lg-1">
-          <div class="left-image">
-            <img src="assets/images/cta-left-image.png" alt="">
-          </div>
-        </div>
-        <div class="col-lg-5 align-self-center">
-          <h6>APROVECHA!</h6>
-          <h4>Te damos 50% de descuento si compras +1 curso </h4>
-          <p>"Los grandes logros de
-            cualquier persona,
-            generalmente dependen de
-            muchas manos, corazones y
-            mentes."
-          </p>
-          <div class="white-button">
-            <a href="/contact">Ver Cursos</a>
           </div>
         </div>
       </div>
