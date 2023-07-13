@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-
+    <link rel="stylesheet" href="assets/whatsapp/css/fontello.css">
     <title>Analytika Women</title>
 
     <!-- Bootstrap core CSS -->
@@ -361,6 +361,9 @@
           checkSection();
         });
     </script>
+    <a href="https://api.whatsapp.com/send?phone=593979447631" class="btn-wsp" target="_blank">
+      <i class="icon-whatsapp"></i>
+    </a>
 </body>
 
 </html>
