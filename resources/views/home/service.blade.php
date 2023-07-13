@@ -32,11 +32,12 @@
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
                     <a href="/" class="logo">
-                        <img src="assets/images/logo.png" alt="Analytika-Women" style="height: 15%; width: 30%;">
+                      <img src="assets/images/logo.png" alt="Analytika-Women" style="height: 85%; width: 100%;margin-top: 0px;">
                     </a>
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                         <ul class="nav">
+
                             <li><a href="/">Home</a></li>
                             <li class="has-sub">
                                 <a href="javascript:void(0)">¿Quiénes Somos?</a>
@@ -47,6 +48,20 @@
                                 </ul>
                             </li>
                             <li class="scroll-to-section"><a href="#services">Servicios</a></li>
+
+                            <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                            <li class="has-sub">
+                              <a href="javascript:void(0)">Quiénes somos</a>
+                              <ul class="sub-menu">
+                                  <li><a href="/about">Acerca De</a></li>
+                                  <li><a href="/service">Servicios</a></li>
+                                  <li><a href="/contact">Contactos</a></li>
+                              </ul>
+                          </li>
+                            <li class="scroll-to-section"><a href="#services">Servicios</a></li>
+                            <li class="scroll-to-section"><a href="#courses">Cursos</a></li>
+                            
+
                             <li class="scroll-to-section"><a href="#testimonials">Testimonios</a></li>
                             <li class="scroll-to-section"><a href="#contact-section">Contactos</a></li>
                             @if (Route::has('login'))
@@ -334,7 +349,7 @@
           }
 
         };
-
+        
         var checkSection = function checkSection() {
           $('.section').each(function () {
             var

@@ -280,7 +280,11 @@ header
 }
 
 .header-area .main-nav .logo {
-  line-height: 100px;
+  /*line-height: 100px;*/
+  height:100px;
+  width: 100px;
+
+  /*max-width: 300px;*/
   color: #fff;
   font-size: 28px;
   font-weight: 700;
@@ -605,13 +609,16 @@ header
   }
   .header-area.header-sticky .nav {
     margin-top: 100px !important;
+
   }
   .header-area .main-nav .nav li {
+    height: 15%;
     width: 100%;
     background: #fff;
     border-bottom: 1px solid #eee;
     padding-left: 0px !important;
     padding-right: 0px !important;
+ 
   }
   .header-area .main-nav .nav li a {
     height: 50px !important;
@@ -698,6 +705,8 @@ section.main-banner {
   content: '';
   right: -25%;
   z-index: 1;
+  top: 0px; 
+  left: 280px;
 }
 
 .main-banner .header-text::after {
