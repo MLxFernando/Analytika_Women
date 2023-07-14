@@ -272,7 +272,7 @@ return [
             'icon' => 'fas fa-fw fa-user',
         ],
         [
-            'text'    => 'Cruds',
+            'text'    => 'Menú',
             'icon'    => 'fas fa-fw fa-pen',
             'submenu' => [
                 [

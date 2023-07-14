@@ -4,6 +4,7 @@ namespace App\Http\Livewire;
 
 use Livewire\Component;
 use App\Models\Rol;
+use Barryvdh\DomPDF\Facade\Pdf;
 
 class RolesController extends Component
 {
@@ -19,6 +20,13 @@ class RolesController extends Component
     {
         $this->roles = Rol::all();
         return view('livewire.Rol.index');
+    }
+
+    public function pdf()
+    {
+        $roles = Rol::all();
+        $pdf = Pdf::loadView('livewire.Rol.pdf',compact('roles'));
+        return $pdf->stream();
     }
 
     public function crear()

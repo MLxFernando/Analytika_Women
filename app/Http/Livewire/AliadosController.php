@@ -5,6 +5,7 @@ namespace App\Http\Livewire;
 use Livewire\Component;
 use App\Models\Aliado;
 use Illuminate\Support\Facades\DB;
+use Barryvdh\DomPDF\Facade\Pdf;
 
 class AliadosController extends Component
 {
@@ -37,6 +38,13 @@ class AliadosController extends Component
     {
         $this->aliados = Aliado::all();
         return view('livewire.Aliado.index');
+    }
+
+    public function pdf()
+    {
+        $aliados =Aliado::all();
+        $pdf = Pdf::loadView('livewire.Aliado.pdf',compact('aliados'));
+        return $pdf->stream();
     }
 
     public function crear()

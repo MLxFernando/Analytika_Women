@@ -5,6 +5,7 @@ namespace App\Http\Livewire;
 use Livewire\Component;
 use App\Models\BolsaEmpleo;
 use Illuminate\Support\Facades\DB;
+use Barryvdh\DomPDF\Facade\Pdf;
 
 class BolsaEmpleoController extends Component
 {
@@ -34,7 +35,12 @@ class BolsaEmpleoController extends Component
         $this->empleos = BolsaEmpleo::all();
         return view('livewire.BolsaEmpleo.index');
     }
-
+    public function pdf()
+    {
+        $empleos = BolsaEmpleo::all();
+        $pdf = Pdf::loadView('livewire.BolsaEmpleo.pdf',compact('empleos'));
+        return $pdf->stream();
+    }
     public function crear()
     {
         $this->limpiarCampos();
@@ -53,7 +59,7 @@ class BolsaEmpleoController extends Component
         $this -> BDE_ID = null;
         $this -> BDE_NOMBRE = '';
         $this -> BDE_DESCRIPCION = '';
-        $this -> BDE_FECHA_EXPERIENCIA = '';
+        $this -> BDE_FECHA_CREACION = '';
         $this -> BDE_FECHA_ELIMINACION = '';
         $this -> BDE_POSTULANTES = '';
         $this -> ALI_ID = null;

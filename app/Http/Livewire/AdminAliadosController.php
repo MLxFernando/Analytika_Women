@@ -5,6 +5,7 @@ namespace App\Http\Livewire;
 use Livewire\Component;
 use App\Models\AdminAliados;
 use Illuminate\Support\Facades\DB;
+use Barryvdh\DomPDF\Facade\Pdf;
 
 class AdminAliadosController extends Component
 {
@@ -32,7 +33,12 @@ class AdminAliadosController extends Component
         $this->adminaliados = AdminAliados::all();
         return view('livewire.AdminAliados.index');
     }
-
+    public function pdf()
+    {
+        $adminaliados = AdminAliados::all();
+        $pdf = Pdf::loadView('livewire.AdminAliados.pdf',compact('adminaliados'));
+        return $pdf->stream();
+    }
     public function crear()
     {
         $this->limpiarCampos();

@@ -19,8 +19,14 @@ use App\Http\Controllers\HomeController;
 
 
 Route::get('/redirects', [HomeController::class, 'redirects'])->name('redirects');
-Route::get('/AdminAliados', AdminAliadosController::class)->name('adminaliados');
+Route::get('/Rolpdf', [ RolesController::class, 'pdf'])->name('rolpdf');
+Route::get('/Clientepdf', [ClientesController::class, 'pdf'])->name('clientepdf');
+Route::get('/Gerentepdf', [AdminGerentesController::class, 'pdf'])->name('gerentepdf');
+Route::get('/AdminAliadopdf', [AdminAliadosController::class, 'pdf'])->name('adminaliadopdf');
+Route::get('/Aliadopdf', [AliadosController::class, 'pdf'])->name('aliadopdf');
+Route::get('/BolsaEmpleopdf', [BolsaEmpleoController::class, 'pdf'] )->name('bolsaempleopdf');
 Route::get('/AdminGerentes', AdminGerentesController::class)->name('admingerentes');
+Route::get('/AdminAliados', AdminAliadosController::class)->name('adminaliados');
 Route::get('/Aliados', AliadosController::class)->name('aliados');
 Route::get('/BolsaEmpleo', BolsaEmpleoController::class)->name('bolsaempleo');
 Route::get('/Cliente', ClientesController::class)->name('cliente');

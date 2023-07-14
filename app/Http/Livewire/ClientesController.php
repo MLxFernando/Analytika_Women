@@ -5,6 +5,7 @@ namespace App\Http\Livewire;
 use Livewire\Component;
 use App\Models\Cliente;
 use Illuminate\Support\Facades\DB;
+use Barryvdh\DomPDF\Facade\Pdf;
 
 class ClientesController extends Component
 {
@@ -32,6 +33,13 @@ class ClientesController extends Component
     {
         $this->clientes = Cliente::all();
         return view('livewire.Cliente.index');
+    }
+
+    public function pdf()
+    {
+        $clientes = Cliente::all();
+        $pdf = Pdf::loadView('livewire.Cliente.pdf',compact('clientes'));
+        return $pdf->stream();
     }
 
     public function crear()

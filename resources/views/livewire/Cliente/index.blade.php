@@ -14,6 +14,7 @@
 
 
         <button wire:click="crear()" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 my-3" >Nuevo</button>
+        <button  onclick="window.location.href='/Clientepdf'" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 my-3" >PDF</button>
         @if($modal)
             @include('livewire.Cliente.crear')   
         @endif    
@@ -34,6 +35,7 @@
         </thead>
         <tbody>
         @foreach($clientes as $cliente)
+        
             <tr>
                 <td class="border px-4 py-2">{{$cliente->CLI_ID}}</td>
                 <td class="border px-4 py-2">{{$cliente->CLI_NOMBRE}}</td>

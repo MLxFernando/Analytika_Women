@@ -5,6 +5,7 @@ namespace App\Http\Livewire;
 use Livewire\Component;
 use App\Models\AdminGerente;
 use Illuminate\Support\Facades\DB;
+use Barryvdh\DomPDF\Facade\Pdf;
 
 class AdminGerentesController extends Component
 {
@@ -33,6 +34,12 @@ class AdminGerentesController extends Component
         return view('livewire.AdminGerente.index');
     }
 
+    public function pdf()
+    {
+        $admingerentes = AdminGerente::all();
+        $pdf = Pdf::loadView('livewire.AdminGerente.pdf',compact('admingerentes'));
+        return $pdf->stream();
+    }
     public function crear()
     {
         $this->limpiarCampos();
