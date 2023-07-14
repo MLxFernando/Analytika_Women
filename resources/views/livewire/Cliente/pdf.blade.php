@@ -35,7 +35,7 @@ $html = '
                         <th>TELEFONO</th>
                         <th>DIRECCION</th>
                         <th>FECHA REGISTRO</th>
-                        <th>ROL</th>
+
 
                     </tr>
                 </thead>
@@ -50,7 +50,7 @@ $html = '
                            <td class="border px-4 py-2">{{$cliente->CLI_TELEFONO}}</td>
                            <td class="border px-4 py-2">{{$cliente->CLI_DIRECCION}}</td>
                           <td class="border px-4 py-2">{{$cliente->CLI_FECHA_REGISTRO}}</td>
-                          <td class="border px-4 py-2">{{ isset($roles[$cliente->ROL_ID]) ? $roles[$cliente->ROL_ID] : 'Nombre no encontrado' }}</td>
+                        
                             </tr>
                         @endforeach
                         

@@ -32,7 +32,7 @@ $html = '
                 <th>NOMBRE</th>
                 <th>APELLIDO</th>
                 <th>CORREO</th>
-                <th>ROL</th>
+
                     </tr>
                 </thead>
                 <tbody>
@@ -43,7 +43,7 @@ $html = '
                                 <td class="border px-4 py-2">{{$aliado->ALI_NOMBRE}}</td>
                                 <td class="border px-4 py-2">{{$aliado->ALI_APELLIDO}}</td>
                                 <td class="border px-4 py-2">{{$aliado->ALI_CORREO}}</td>
-                                <td class="border px-4 py-2">{{ isset($roles[$aliado->ROL_ID]) ? $roles[$aliado->ROL_ID] : 'Nombre no encontrado' }}</td>
+                         
                             </tr>
                         @endforeach
                         
