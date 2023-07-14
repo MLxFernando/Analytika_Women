@@ -8,7 +8,7 @@
     <div class="container">
         <div class="row">
             @foreach(range(1, 10) as $index)
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <canvas id="myChart{{ $index }}"></canvas>
                 </div>
             @endforeach
@@ -43,20 +43,22 @@
 @stop
 
 @section('js')
-    <script src="{{ asset('vendor/chart.js/chart.min.js') }}"></script>
+<script src="{{ asset('vendor/chart.js/chart.min.js') }}"></script>
     @php
         $colors = ['rgba(255, 99, 132, 0.5)', 'rgba(54, 162, 235, 0.5)', 'rgba(255, 206, 86, 0.5)', 'rgba(75, 192, 192, 0.5)', 'rgba(153, 102, 255, 0.5)', 'rgba(255, 159, 64, 0.5)', 'rgba(255, 0, 0, 0.5)', 'rgba(0, 255, 0, 0.5)', 'rgba(0, 0, 255, 0.5)', 'rgba(128, 128, 128, 0.5)'];
         $titles = ['Clientes por mes', 'Usuarios Registrados', 'Ingresos por categoría', 'Proyectos Completados', 'Nuevos Empleos Registrados', 'Nuevos Aliados', 'Nuevos Consultores', 'Valoración Promedio', 'Visitas diarias', 'Nuevos Cursos'];
-    @endphp
+        $types = ['line','bar','radar','doughnut','polarArea','bar','pie','polarArea','line','bar'];
+        @endphp
     @foreach(range(1, 10) as $index)
         <script>
             document.addEventListener('DOMContentLoaded', function () {
+                
                 var ctx = document.getElementById('myChart{{ $index }}').getContext('2d');
                 var gradient = ctx.createLinearGradient(0, 0, 0, 400);
                 gradient.addColorStop(0, '{{ $colors[$index - 1] }}');
                 gradient.addColorStop(1, 'rgba(255, 255, 255, 0)');
                 var chart = new Chart(ctx, {
-                    type: 'line',
+                    type: '{{ $types[$index - 1] }}',
                     data: {
                         labels: ['January', 'February', 'March', 'April', 'May', 'June'],
                         datasets: [{
@@ -71,7 +73,7 @@
                             ],
                             backgroundColor: gradient,
                             borderColor: '{{ $colors[$index - 1] }}',
-                            pointBackgroundColor: '{{ $colors[$index - 1] }}',
+                            pointBackgroundColor: 'rgba(0, 0, 0, 10)',
                             pointBorderColor: 'rgba(255, 255, 255, 0)',
                             pointHoverBackgroundColor: '{{ $colors[$index - 1] }}',
                             pointHoverBorderColor: 'rgba(255, 255, 255, 0)',
@@ -88,6 +90,6 @@
                     }
                 });
             });
-        </script>
+        </script>
     @endforeach
 @stop
