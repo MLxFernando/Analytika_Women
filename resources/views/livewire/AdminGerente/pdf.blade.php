@@ -1,58 +1,61 @@
-<!DOCTYPE html>
-$html = '
 <html>
 <head>
-<style>
-.table-fixed {
-    width: 100%;
-}
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
 
-.table-fixed th,
-.table-fixed td {
-    border: 1px solid black;
-    padding: 4px;
-    color: black; /* Agrega el color negro para las letras */
-    /* Agrega otros estilos personalizados según tus necesidades */
-}
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+        }
 
-.bg-indigo-600 {
-    background-color: #4F46E5;
-    color: white;
-}
-</style>
+        .table th,
+        .table td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+            background-color: #e6f2ff; /* Cambiamos el fondo a un azul claro */
+            color: black; /* Cambiamos el color de texto a negro */
+        }
+
+        .table th {
+            background-color: #333333;
+            color: white;
+            font-weight: bold;
+        }
+
+        .table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
 </head>
 <body>
-<div class="py-12">
-    <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-        <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-            <table class="table-fixed">
-                <thead>
-                    <tr class="bg-indigo-600">
-                        <th>ID</th>
-                        <th>NOMBRE</th>
-                        <th>APELLIDO</th>
-                        <th>CORREO</th>
-
-                    </tr>
-                </thead>
-                <tbody>
-                    
+    <div class="py-12">
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>NOMBRE</th>
+                            <th>APELLIDO</th>
+                            <th>CORREO</th>
+                        </tr>
+                    </thead>
+                    <tbody>
                         @foreach($admingerentes as $admin)
-                            <tr>
-                                <td class="border px-4 py-2">{{$admin->ADG_ID}}</td>
-                                <td class="border px-4 py-2">{{$admin->ADG_NOMBRE}}</td>
-                                <td class="border px-4 py-2">{{$admin->ADG_APELLIDO}}</td>
-                                <td class="border px-4 py-2">{{$admin->ADG_CORREO}}</td>
-                        
-                                
-                            </tr>
+                        <tr>
+                            <td>{{$admin->ADG_ID}}</td>
+                            <td>{{$admin->ADG_NOMBRE}}</td>
+                            <td>{{$admin->ADG_APELLIDO}}</td>
+                            <td>{{$admin->ADG_CORREO}}</td>
+                        </tr>
                         @endforeach
-                        
-                </tbody>
-            </table>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
-</div>
 </body>
 </html>
-';

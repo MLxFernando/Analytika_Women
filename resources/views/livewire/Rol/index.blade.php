@@ -13,7 +13,7 @@
             @endif
 
             <button wire:click="crear()" onclick="generarDatosAleatorios()" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 my-3">Nuevo</button>
-            <button  onclick="window.location.href='/Rolpdf'" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 my-3" >PDF</button>
+           
             @if($modal)
                 @include('livewire.Rol.crear')
             @endif
