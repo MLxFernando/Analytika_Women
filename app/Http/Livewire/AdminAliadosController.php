@@ -7,6 +7,7 @@ use App\Models\AdminAliados;
 use Illuminate\Support\Facades\DB;
 use Barryvdh\DomPDF\Facade\Pdf;
 
+
 class AdminAliadosController extends Component
 {
     //definimos unas variables

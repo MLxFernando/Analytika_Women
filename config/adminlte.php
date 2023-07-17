@@ -329,6 +329,11 @@ return [
                 ],
             ],
         ],
+        [
+            'text' => 'Reportes',
+            'url'  => '/Reporte',
+            'icon' => 'fas fa-fw fa-file-alt' ,
+        ],
         
         
         

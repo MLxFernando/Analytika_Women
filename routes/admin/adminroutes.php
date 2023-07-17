@@ -16,7 +16,7 @@ use App\Http\Livewire\PostulantesController;
 use App\Http\Livewire\RolesController;
 use App\Http\Livewire\ServiciosController;
 use App\Http\Controllers\HomeController;
-
+use App\Http\Livewire\ReporteController;
 
 Route::get('/redirects', [HomeController::class, 'redirects'])->name('redirects');
 Route::get('/Rolpdf', [ RolesController::class, 'pdf'])->name('rolpdf');
@@ -25,6 +25,9 @@ Route::get('/Gerentepdf', [AdminGerentesController::class, 'pdf'])->name('gerent
 Route::get('/AdminAliadopdf', [AdminAliadosController::class, 'pdf'])->name('adminaliadopdf');
 Route::get('/Aliadopdf', [AliadosController::class, 'pdf'])->name('aliadopdf');
 Route::get('/BolsaEmpleopdf', [BolsaEmpleoController::class, 'pdf'] )->name('bolsaempleopdf');
+
+Route::get('/Reporte', [ReporteController::class, 'index'] )->name('reporte');
+
 Route::get('/AdminGerentes', AdminGerentesController::class)->name('admingerentes');
 Route::get('/AdminAliados', AdminAliadosController::class)->name('adminaliados');
 Route::get('/Aliados', AliadosController::class)->name('aliados');
