@@ -37,7 +37,7 @@
                     <span class="info-box-icon bg-blue"><i class="fas fa-file-alt"></i></span>
                     <div class="info-box-content">
                         <p class="info-box-text">Reporte listado de roles</p>
-                        <a href="/Rolpdf" class="btn btn-primary btn-block">PDF</a>
+                        <a href="/Rolpdf" class="btn btn-primary btn-block">Generar PDF</a>
                     </div>
                 </div>
             </div>
@@ -47,7 +47,7 @@
                     <span class="info-box-icon bg-blue"><i class="fas fa-users"></i></span>
                     <div class="info-box-content">
                         <p class="info-box-text">Reporte administración gerente</p>
-                        <a href="/Gerentepdf" class="btn btn-primary btn-block">PDF</a>
+                        <a href="/Gerentepdf" class="btn btn-primary btn-block">Generar PDF</a>
                     </div>
                 </div>
             </div>
@@ -57,7 +57,7 @@
                     <span class="info-box-icon bg-blue"><i class="fas fa-user"></i></span>
                     <div class="info-box-content">
                         <p class="info-box-text">Reporte información clientes</p>
-                        <a href="/Clientepdf" class="btn btn-primary btn-block">PDF</a>
+                        <a href="/Clientepdf" class="btn btn-primary btn-block">Generar PDF</a>
                     </div>
                 </div>
             </div>
@@ -67,7 +67,7 @@
                     <span class="info-box-icon bg-blue"><i class="fas fa-building"></i></span>
                     <div class="info-box-content">
                         <p class="info-box-text">Reporte listado aliados</p>
-                        <a href="/AdminAliadopdf" class="btn btn-primary btn-block">PDF</a>
+                        <a href="/AdminAliadopdf" class="btn btn-primary btn-block">Generar PDF</a>
                     </div>
                 </div>
             </div>
@@ -77,7 +77,7 @@
                     <span class="info-box-icon bg-blue"><i class="fas fa-briefcase"></i></span>
                     <div class="info-box-content">
                         <p class="info-box-text">Reporte Bolsa de empleo</p>
-                        <a href="/BolsaEmpleopdf" class="btn btn-primary btn-block">PDF</a>
+                        <a href="/BolsaEmpleopdf" class="btn btn-primary btn-block">Generar PDF</a>
                     </div>
                 </div>
             </div>
