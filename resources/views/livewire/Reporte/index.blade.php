@@ -46,7 +46,7 @@
                 <div class="info-box">
                     <span class="info-box-icon bg-blue"><i class="fas fa-users"></i></span>
                     <div class="info-box-content">
-                        <p class="info-box-text">Reporte Listado Usuarios</p>
+                        <p class="info-box-text">Reporte administración gerente</p>
                         <a href="/Gerentepdf" class="btn btn-primary btn-block">PDF</a>
                     </div>
                 </div>
