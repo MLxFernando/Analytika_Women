@@ -25,9 +25,7 @@ Route::get('/Gerentepdf', [AdminGerentesController::class, 'pdf'])->name('gerent
 Route::get('/AdminAliadopdf', [AdminAliadosController::class, 'pdf'])->name('adminaliadopdf');
 Route::get('/Aliadopdf', [AliadosController::class, 'pdf'])->name('aliadopdf');
 Route::get('/BolsaEmpleopdf', [BolsaEmpleoController::class, 'pdf'] )->name('bolsaempleopdf');
-
 Route::get('/Reporte', [ReporteController::class, 'index'] )->name('reporte');
-
 Route::get('/AdminGerentes', AdminGerentesController::class)->name('admingerentes');
 Route::get('/AdminAliados', AdminAliadosController::class)->name('adminaliados');
 Route::get('/Aliados', AliadosController::class)->name('aliados');
