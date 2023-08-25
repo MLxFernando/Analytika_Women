@@ -83,7 +83,7 @@
 <body>
     <div class="container">
         <div class="report-title">
-            Reporte roles
+            Reporte de roles
         </div>
         <div class="table-container">
             <table class="table">
